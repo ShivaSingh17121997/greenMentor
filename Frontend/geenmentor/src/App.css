@@ -1,0 +1,29 @@
+.navbar {
+  position: sticky;
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.navbar a.active {
+  background-color: #555;
+}
