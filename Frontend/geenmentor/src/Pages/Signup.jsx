@@ -22,7 +22,7 @@ export default function Signup() {
 
 
     const handleSubmit = () => {
-        axios.post("http://localhost//8080/users/register",{
+        axios.post("http://localhost:8080/users/register",{
             email,
             password
         })

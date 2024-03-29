@@ -18,9 +18,10 @@ productRouter.post("/create", async (req, res) => {
 
 })
 
-productRouter.get("/", (req, res) => {
+productRouter.get("/", async(req, res) => {
     try {
-        const product = productModel.find();
+        const product =await productModel.find();
+        res.json(product)
         res.send(product)
 
     } catch (error) {

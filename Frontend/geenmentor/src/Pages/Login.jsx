@@ -22,7 +22,7 @@ export default function Login() {
 
 
     const handleSubmit = () => {
-        axios.post("http://localhost//8080/users/login",{
+        axios.post("http://localhost:8080/users/login",{
             email,
             password
         })
